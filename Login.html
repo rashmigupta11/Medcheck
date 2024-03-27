@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: #00B8CA;
+        }
+        form{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function check(){
+    var x = document.getElementById("em").value;
+    var y = document.getElementById("pass").value;
+    if(x=="" || y==""){
+        alert("Enter the required fields.");
+    }
+}
+    </script>
+    <div>
+    <form id="one">
+        <h1>Login Form</h1>
+        <br>
+        <label>E-mail Id</label>
+        <br><br>
+        <input type="text" id="em" placeholder=" &#9993;  E-mail address">
+        <br><br>
+        <label>Password</label>
+        <br><br>
+        <input type="password" id="pass" placeholder="&#xf023; Enter password">    
+        <br><br>
+        <p>Not yet member?
+        <a href="signup.html" style="font-size: 20px; color: blue;">Sign Up</a></p>
+        <br>
+<a href="index.html" id="button" onclick="check()">LOGIN</a>
+<br>
+    </form>
+    </div>
+</body>
+</html>

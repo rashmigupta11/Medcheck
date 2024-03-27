@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BP</title>
+    <link rel="stylesheet" href="style3.css">
+    <style>
+form{
+    font-weight: bolder;
+}
+body{
+    background-color: aliceblue;
+}
+    </style>
+</head>
+<header>
+    <div class="img"><img src="medlogo.png" style="height: 80px; width: 150px;"></div>
+    <div class="nav" style="margin-left: 25%;">KIDNEY FUNCTION TEST</div>
+</header>
+<body>
+    <script src="KFT.js"></script>
+    <div class="main">
+    <a href="tests.html" id="one">Tests</a>><a href="bp.html" id="two">KFT</a>
+    <p class="parameters">
+    <form>
+        <label>BLOOD UREA</label><br><br>
+        <input type="text" id="one" placeholder="Enter value in mg/dL"><br><br>
+        <label>SERUM CREATININE</label><br><br>
+        <input type="text" id="two" placeholder="Enter value in mg/dL"><br><br>
+        <label>URIC ACID</label><br><br>
+        <input type="text" id="three" placeholder="Enter value in mg/dL"><br><br>
+        <label>BLOOD UREA NITROGEN(BUN)</label><br><br>
+        <input type="text" id="four" placeholder="Enter value in mg/dL"><br><br>
+        <label>ALBUMIN</label><br><br>
+        <input type="text" id="five" placeholder="Enter value in gm/dL"><br><br>
+        <label>GLOBULIN</label><br><br>
+        <input type="text"id="six" placeholder="Enter value in gm/dL"><br><br>
+        <button id="btn1" onclick="report()">Submit</button>
+        <div class="result" id="calc">
+            REPORT<p id="report"></p>
+        </div>
+    </form>
+    </p>
+    </div>
+</body>
+</html>

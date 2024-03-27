@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Sugar</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<header>
+    <div class="img"><img src="medlogo.png" style="height: 80px; width: 150px;"></div>
+    <div class="nav" style="margin-left: 25%;">BLOOD SUGAR TEST</div>
+</header>
+<body>
+    <script src="sugar.js"></script>
+    <div class="main">
+    <a href="tests.html" id="one">Tests</a>><a href="sugar.html" id="two">Blood Sugar</a>
+    <br>
+    <p class="parameters">
+        <label>Test Type</label>
+        <br>
+        <select name="Test Type" id="test">
+            <option value="Fasting Blood Sugar">Fasting Blood Sugar(FBS)</option>
+            <option value="Postprandial Blood Sugar">Postprandial Blood Sugar(PPBS)</option>
+            <option value="Random Blood Sugar">Random Blood Sugar(RBS)</option>
+            <option value="Hemoglobin A1c">Hemoglobin A1c(HbA1c)</option>
+            <option value="Oral Glucose Tolerance Test">Oral Glucose Tolerance Test(OGTT)</option>
+        </select>
+        <br><br>
+        <label>Enter the measured value.</label>
+        <br>
+        <input type="text" placeholder="Enter in mg/dL " id="val">
+        <br>
+        <button id="save" onclick="result()">Submit</button>
+    </p>
+    <div class="result" id="calc"><h4>Report</h4><br>
+        <p id="report"></p>
+        <div id="myDIV">
+            <a href="sugardiet.html" id="sugg">See Diet Suggestions</a>.
+        </div>
+    </div>
+</div>
+<script src="sugar.js"></script>
+</body>
+</html>

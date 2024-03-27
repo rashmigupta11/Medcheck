@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BP</title>
+    <link rel="stylesheet" href="style3.css">
+    <style>
+form{
+    font-weight: bolder;
+}
+    </style>
+</head>
+<header>
+    <div class="img"><img src="medlogo.png" style="height: 80px; width: 150px;"></div>
+    <div class="nav" style="margin-left: 25%;">BODY MASS INDEX</div>
+</header>
+<body>
+    <script src="bmi.js"></script>
+    <div class="main">
+    <a href="tests.html" id="one">Tests</a>><a href="BMI.html" id="two">BODY MASS INDEX</a>
+    <p class="parameters">
+    <form>
+        <label>Weight</label><br><br>
+        <input type="text" id="weight" placeholder="Enter weight in Kg"><br><br>
+        <label>Height</label><br><br>
+        <input type="text" id="height" placeholder="Enter height in meters"><br><br>
+        <button id="btn" onclick="calc()">Submit</button>
+        <br>
+        <div class="result" id="calc">
+            REPORT<p id="report"></p>
+        </div>
+    </form>
+    </p>
+    </div>
+</body>
+</html>

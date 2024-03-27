@@ -1,0 +1,51 @@
+body {
+    background-color: #f0f8ff; /* aliceblue */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #00b8ca;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    margin-left: 10px;
+}
+
+#profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.profile-info {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info div {
+    margin-bottom: 10px;
+}
+.nav{
+    height:100px;
+    width:100%;
+    background-color: #00B8CA;
+display: flex;
+color: white;
+align-items: center;
+}
+.label {
+    font-weight: bold;
+}
